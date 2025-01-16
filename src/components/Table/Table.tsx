@@ -97,6 +97,7 @@ const styles = StyleSheet.create({
   },
   monthText: {
     fontSize: 7,
+    width:15,
     color: colors.gray,
   },
   paymentSummaryContainer: {},
@@ -114,6 +115,7 @@ const styles = StyleSheet.create({
   },
   iconsContainer: {
     flex: 1,
+    width:15,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems:'center',

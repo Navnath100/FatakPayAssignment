@@ -14,23 +14,28 @@ else if(status==='PAID'){
    return <Image style={[styles.icon,{marginRight}]} source={IconPack.TICK} />
 }
 else if(status==='DELAYED'){
-   return  <View style={[styles.icon,styles.DELAYED,{marginRight}]} />
+   return  <View style={[styles.icon,{marginRight}]}><View style={styles.DELAYED}/></View>
 }
 }
 
 const styles = StyleSheet.create({
     icon: {
         height: 9.62,
-        width: undefined,
+        width: 9.61,
+        borderRadius:100,
         aspectRatio: 1,
-        borderRadius:50
+        alignItems:'center',
+        justifyContent:'center'
       },
       NA:{
         backgroundColor:colors.red
       },
       DELAYED:{
         backgroundColor:colors.D9D9D9,
-        height:4.37
+        height:4.37,
+        width:4.37,
+        aspectRatio:1,
+        borderRadius:50,
       }
 })
 
